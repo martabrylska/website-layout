@@ -95,5 +95,11 @@ if (index === active) {
 })
 }
 
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', function() {
+        active = index;
+    changeImage()})
+})
+
 arrowLeft.addEventListener('click', changeImage)
 arrowRight.addEventListener('click', changeImage)
